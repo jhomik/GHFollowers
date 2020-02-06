@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		5A210CD723EAEEA400A22BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A210CD623EAEEA400A22BF4 /* AppDelegate.swift */; };
 		5A210CD923EAEEA400A22BF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A210CD823EAEEA400A22BF4 /* SceneDelegate.swift */; };
-		5A210CDB23EAEEA400A22BF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A210CDA23EAEEA400A22BF4 /* ViewController.swift */; };
-		5A210CDE23EAEEA400A22BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A210CDC23EAEEA400A22BF4 /* Main.storyboard */; };
 		5A210CE023EAEEA700A22BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A210CDF23EAEEA700A22BF4 /* Assets.xcassets */; };
 		5A210CE323EAEEA700A22BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A210CE123EAEEA700A22BF4 /* LaunchScreen.storyboard */; };
+		5A210CEB23EAF94100A22BF4 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A210CEA23EAF94100A22BF4 /* SearchVC.swift */; };
+		5A210CED23EAF96D00A22BF4 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A210CEC23EAF96D00A22BF4 /* FavoritesListVC.swift */; };
+		5A210CEF23EB2B3F00A22BF4 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A210CEE23EB2B3F00A22BF4 /* GFButton.swift */; };
+		5A210CF123EB303C00A22BF4 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A210CF023EB303C00A22BF4 /* GFTextField.swift */; };
+		5A210CF323EB509500A22BF4 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A210CF223EB509500A22BF4 /* FollowerListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A210CD323EAEEA400A22BF4 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A210CD623EAEEA400A22BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A210CD823EAEEA400A22BF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5A210CDA23EAEEA400A22BF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5A210CDD23EAEEA400A22BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A210CDF23EAEEA700A22BF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A210CE223EAEEA700A22BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A210CE423EAEEA700A22BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A210CEA23EAF94100A22BF4 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		5A210CEC23EAF96D00A22BF4 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		5A210CEE23EB2B3F00A22BF4 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		5A210CF023EB303C00A22BF4 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		5A210CF223EB509500A22BF4 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				5A210CD623EAEEA400A22BF4 /* AppDelegate.swift */,
 				5A210CD823EAEEA400A22BF4 /* SceneDelegate.swift */,
-				5A210CDA23EAEEA400A22BF4 /* ViewController.swift */,
-				5A210CDC23EAEEA400A22BF4 /* Main.storyboard */,
+				5A210CEE23EB2B3F00A22BF4 /* GFButton.swift */,
+				5A210CF023EB303C00A22BF4 /* GFTextField.swift */,
 				5A210CDF23EAEEA700A22BF4 /* Assets.xcassets */,
 				5A210CE123EAEEA700A22BF4 /* LaunchScreen.storyboard */,
 				5A210CE423EAEEA700A22BF4 /* Info.plist */,
+				5A210CEA23EAF94100A22BF4 /* SearchVC.swift */,
+				5A210CF223EB509500A22BF4 /* FollowerListVC.swift */,
+				5A210CEC23EAF96D00A22BF4 /* FavoritesListVC.swift */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -127,7 +136,6 @@
 			files = (
 				5A210CE323EAEEA700A22BF4 /* LaunchScreen.storyboard in Resources */,
 				5A210CE023EAEEA700A22BF4 /* Assets.xcassets in Resources */,
-				5A210CDE23EAEEA400A22BF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A210CDB23EAEEA400A22BF4 /* ViewController.swift in Sources */,
+				5A210CF123EB303C00A22BF4 /* GFTextField.swift in Sources */,
+				5A210CED23EAF96D00A22BF4 /* FavoritesListVC.swift in Sources */,
+				5A210CEF23EB2B3F00A22BF4 /* GFButton.swift in Sources */,
+				5A210CEB23EAF94100A22BF4 /* SearchVC.swift in Sources */,
+				5A210CF323EB509500A22BF4 /* FollowerListVC.swift in Sources */,
 				5A210CD723EAEEA400A22BF4 /* AppDelegate.swift in Sources */,
 				5A210CD923EAEEA400A22BF4 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5A210CDC23EAEEA400A22BF4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A210CDD23EAEEA400A22BF4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5A210CE123EAEEA700A22BF4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubhomik.GHFollowers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubhomik.GHFollowers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
