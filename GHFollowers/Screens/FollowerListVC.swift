@@ -10,7 +10,7 @@ import UIKit
 
 class FollowerListVC: UIViewController {
     
-    var username: String!
+    var username: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
