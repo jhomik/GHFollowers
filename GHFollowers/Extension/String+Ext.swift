@@ -6,22 +6,27 @@
 //  Copyright © 2020 Jakub Homik. All rights reserved.
 //
 
-import Foundation
+// MARK: used diffrent solution in NetworkManager decoder.dateDecodingStrategy = .iso8601
 
-extension String {
-    
-    func convertToDate() -> Date? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        dateFormatter.locale = Locale(identifier: "pl_PL")
-        dateFormatter.timeZone = .current
-        
-        return dateFormatter.date(from: self)
-    }
-    
-    func convertToDisplayFormat() -> String {
-        guard let date = self.convertToDate() else { return "N/A" }
-        return date.convertToMonthYearFormat()
-    }
-    
-}
+//import Foundation
+//
+//extension String {
+//
+//    func convertToDate() -> Date? {
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+//        dateFormatter.locale = Locale(identifier: "pl_PL")
+//        dateFormatter.timeZone = .current
+//
+//        return dateFormatter.date(from: self)
+//    }
+//
+//    func convertToDisplayFormat() -> String {
+//        guard let date = self.convertToDate() else { return "N/A" }
+//        return date.convertToMonthYearFormat()
+//    }
+//
+//}
+
+
+

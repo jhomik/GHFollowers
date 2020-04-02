@@ -19,12 +19,7 @@ class GFContrainerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init() {
-        super.init(frame: .zero)
-        configure()
-    }
-    
-    func configure() {
+    private func configure() {
         backgroundColor = .systemBackground
         layer.cornerRadius = 12
         layer.borderColor = UIColor.white.cgColor
