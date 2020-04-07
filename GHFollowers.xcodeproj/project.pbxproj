@@ -43,6 +43,9 @@
 		5A792AF4242686F300DC06CD /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A792AF3242686F300DC06CD /* GFItemInfoView.swift */; };
 		5AAB6DD923F2E8870064E5FB /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB6DD823F2E8870064E5FB /* UIHelper.swift */; };
 		5AED0D812435FC5E00CE47F0 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AED0D802435FC5E00CE47F0 /* GFTabBarController.swift */; };
+		5AED0D8324364D3600CE47F0 /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AED0D8224364D3600CE47F0 /* GFDataLoadingVC.swift */; };
+		5AFF4305243B33DA00877590 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF4304243B33DA00877590 /* UIView+Ext.swift */; };
+		5AFF4307243C81AD00877590 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF4306243C81AD00877590 /* UITableView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +87,9 @@
 		5A792AF3242686F300DC06CD /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 		5AAB6DD823F2E8870064E5FB /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		5AED0D802435FC5E00CE47F0 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
+		5AED0D8224364D3600CE47F0 /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
+		5AFF4304243B33DA00877590 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		5AFF4306243C81AD00877590 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,8 @@
 				5A210CFF23EDA3F100A22BF4 /* SearchVC+Ext.swift */,
 				5A15029B2427F83900E83104 /* Date+Ext.swift */,
 				5A15029D2427F8E600E83104 /* String+Ext.swift */,
+				5AFF4304243B33DA00877590 /* UIView+Ext.swift */,
+				5AFF4306243C81AD00877590 /* UITableView+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -263,6 +271,7 @@
 				5A15029A2427E4A500E83104 /* ItemInfoVCs */,
 				5A210CF823ED73E700A22BF4 /* GFAlertVC.swift */,
 				5A792AED24225D5600DC06CD /* GFUserInfoHeaderVC.swift */,
+				5AED0D8224364D3600CE47F0 /* GFDataLoadingVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -366,6 +375,7 @@
 				5A15029E2427F8E600E83104 /* String+Ext.swift in Sources */,
 				5A792AF4242686F300DC06CD /* GFItemInfoView.swift in Sources */,
 				5A15029C2427F83900E83104 /* Date+Ext.swift in Sources */,
+				5AFF4307243C81AD00877590 /* UITableView+Ext.swift in Sources */,
 				5A1502952427A30400E83104 /* GFItemInfoVC.swift in Sources */,
 				5A210CED23EAF96D00A22BF4 /* FavoritesListVC.swift in Sources */,
 				5A210CEF23EB2B3F00A22BF4 /* GFButton.swift in Sources */,
@@ -378,6 +388,7 @@
 				5A792AF024225DF000DC06CD /* GFSecondaryTitleLabel.swift in Sources */,
 				5A210D5323F1900600A22BF4 /* FollowerCell.swift in Sources */,
 				5AED0D812435FC5E00CE47F0 /* GFTabBarController.swift in Sources */,
+				5AED0D8324364D3600CE47F0 /* GFDataLoadingVC.swift in Sources */,
 				5A210CF923ED73E700A22BF4 /* GFAlertVC.swift in Sources */,
 				5A792AEE24225D5600DC06CD /* GFUserInfoHeaderVC.swift in Sources */,
 				5A792AE8241B8E5A00DC06CD /* GFEmptyStateView.swift in Sources */,
@@ -386,6 +397,7 @@
 				5A1502AA2432165900E83104 /* FavoriteCell.swift in Sources */,
 				5A1502992427E45B00E83104 /* GFFollowerItemVC.swift in Sources */,
 				5A210CF323EB509500A22BF4 /* FollowerListVC.swift in Sources */,
+				5AFF4305243B33DA00877590 /* UIView+Ext.swift in Sources */,
 				5A210CD723EAEEA400A22BF4 /* AppDelegate.swift in Sources */,
 				5A210CD923EAEEA400A22BF4 /* SceneDelegate.swift in Sources */,
 				5A792AEA2421228400DC06CD /* UserInfoVC.swift in Sources */,

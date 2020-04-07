@@ -13,17 +13,18 @@ class SearchVC: UIViewController {
     let logoImageView = UIImageView()
     let usernameTextField = GFTextField()
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
-    var logoImageViewTopConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        view.addSubviews(logoImageView, usernameTextField, callToActionButton)
         configureLogoImageView()
         configureTextField()
         configureCallToActionButton()
         createDismisKeyboardTapGesture()
         usernameTextField.delegate = self
-    }
+    } 
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -52,16 +53,13 @@ class SearchVC: UIViewController {
     }
     
     func configureLogoImageView() {
-        view.addSubview(logoImageView)
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         logoImageView.image = Images.ghLogo
         
         let topConstraintConstant: CGFloat = DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? 20 : 80
         
-        logoImageViewTopConstraint = logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: topConstraintConstant)
-        logoImageViewTopConstraint.isActive = true
-        
         NSLayoutConstraint.activate([
+            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: topConstraintConstant),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             logoImageView.heightAnchor.constraint(equalToConstant: 200),
             logoImageView.widthAnchor.constraint(equalToConstant: 200)
@@ -69,7 +67,6 @@ class SearchVC: UIViewController {
     }
     
     func configureTextField() {
-        view.addSubview(usernameTextField)
         
         NSLayoutConstraint.activate([
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
@@ -81,7 +78,6 @@ class SearchVC: UIViewController {
     }
     
     func configureCallToActionButton() {
-        view.addSubview(callToActionButton)
         callToActionButton.addTarget(self, action: #selector(pushFollowerListVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([

@@ -11,7 +11,6 @@ import UIKit
 class NetworkManager {
     
     static let shared = NetworkManager()
-    
     private let baseURL = "https://api.github.com/users/"
     let cache = NSCache<NSString, UIImage>()
     
@@ -29,7 +28,6 @@ class NetworkManager {
             
             if let _ = error {
                 completion(.failure(.unableToComplete))
-                return
             }
             
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
@@ -91,12 +89,13 @@ class NetworkManager {
                 completion(.failure(.invalidData))
             }
         }
+        
         task.resume()
     }
     
     func downloadImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
-        
         let cacheKey = NSString(string: urlString)
+        
         if let image = cache.object(forKey: cacheKey) {
             completion(image)
         }

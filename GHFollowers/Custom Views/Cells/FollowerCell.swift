@@ -24,20 +24,13 @@ class FollowerCell: UICollectionViewCell {
     }
     
     func set(follower: Follower) {
+        avatarImageView.downloadImage(fromURL: follower.avatarUrl)
         usernameLabel.text = follower.login
-        NetworkManager.shared.downloadImage(from: follower.avatarUrl) { (image) in
-            DispatchQueue.main.async {
-                self.avatarImageView.image = image
-            }
-        }
     }
     
     private func configure() {
-        
         let padding: CGFloat = 8
-        
-        addSubview(avatarImageView)
-        addSubview(usernameLabel)
+        addSubviews(avatarImageView, usernameLabel)
         
         NSLayoutConstraint.activate([
             avatarImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
@@ -48,9 +41,7 @@ class FollowerCell: UICollectionViewCell {
             usernameLabel.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: 12),
             usernameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
             usernameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
-            usernameLabel.heightAnchor.constraint(equalToConstant: 20),
-            
-            
+            usernameLabel.heightAnchor.constraint(equalToConstant: 20)
         ])
     }
 }
